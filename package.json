@@ -16,6 +16,7 @@
     "seo-check": "lighthouse https://hager-zon.vercel.app --output json --output html --output csv --output-path ./lighthouse-report",
     "sitemap-ping": "npx tsx scripts/submit-sitemaps.ts",
     "analyze": "npx web-vitals",
+    "analyze-vitals": "node node_modules/web-vitals/dist/web-vitals.js",
     "submit-sitemaps": "npx tsx scripts/submit-sitemaps.ts",
     "format": "prettier --write .",
     "prepare": "husky install"
@@ -115,7 +116,7 @@
     "tailwindcss": "^3.4.1",
     "tsx": "^4.7.1",
     "typescript": "^5.8.3",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "4.2.4"
   },
   "engines": {
     "node": ">=18.17.0"

@@ -175,7 +175,7 @@ export async function setCurrencyOnServer(
   newCurrency: string
 ): Promise<SettingResponse> {
   try {
-    const cookieStore = cookies()
+    const cookieStore = await cookies()
     cookieStore.set('currency', newCurrency, {
       path: '/',
       maxAge: 60 * 60 * 24 * 30, // 30 days
@@ -216,5 +216,5 @@ export async function getSettingWithOptions(
   return ensureSettings(settings)
 }
 
-// Current Date and Time (UTC): 2025-04-21 03:15:47
+// Current Date and Time (UTC): 2025-04-21 04:41:03
 // Current User's Login: ibrahim-lasfar

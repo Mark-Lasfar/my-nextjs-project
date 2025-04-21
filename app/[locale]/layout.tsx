@@ -56,6 +56,17 @@ export async function generateMetadata({
       'online shopping',
       'online market',
       'MGZon shopping',
+      'amazon',
+      'ebay',
+      'alibaba',
+      'aliexpress',
+      'best online shopping',
+      'best online store',
+      'best marketplace',
+      'best ecommerce',
+      'sell online',
+      'buy online',
+      'shop online',
 
       // Shopping Categories
       'clothes',
@@ -83,7 +94,39 @@ export async function generateMetadata({
       'MGZon seller',
       'MGZon marketplace',
       'MGZon store',
+      'توصيل سريع',
+      'تسوق عبر الإنترنت',
+      'تسوق آمن',
+      'تسوق موثوق',
+      'تسوق عالمي',
+      'تسوق دولي',
+      'تسوق عبر الإنترنت في mgzon',
+      'ربح من mgzon',
+      'بيع عبر الإنترنت',
+      'تخفيضات',
+      'عروض خاصة',
+      'ابراهيم الاصفر',
+      'ibrahim lasfar',
+      'ibrahim lasfar mgzon',
+      'ibrahim lasfar store',
+      'mark elasfar',
+      'mark elasfar mgzon',
+      'mark elasfar store',
+      'ibrahim elasfar',
+      'ibrahim elasfar mgzon',
+      'ibrahim elasfar store',
+      'mark lasfar',
+      'sell on amazon',
+      'sell on ebay',
+      'sell on alibaba',
+      'sell on aliexpress',
+      'sell on mgzon',
+      'sell on marketplace',
+      'اعلي ماركت',
+      'اعلي تسوق',
+      'اعلي تسوق عبر الإنترنت',
 
+      
       // Shopping Experience
       'online shopping mgzon',
       'mgzon products',
@@ -344,6 +387,3 @@ export default async function AppLayout({
     notFound()
   }
 }
-
-// Current Date and Time (UTC): 2025-04-21 04:18:29
-// Current User's Login: ibrahim-lasfar

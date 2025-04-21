@@ -29,15 +29,14 @@ const STATIC_PAGES = [
 const DEFAULT_BASE_URL = 'https://hager-zon.vercel.app'
 
 const getBaseUrl = (url?: string): string => {
-  if (url) return url
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
-  return DEFAULT_BASE_URL
+  if (url) return url.replace(/\/+$/, '') // Remove trailing slashes
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL.replace(/\/+$/, '')}`
+  return DEFAULT_BASE_URL.replace(/\/+$/, '') // Default base URL without trailing slashes
 }
 
 const createStaticRoutes = (baseUrl: string): SitemapEntry[] => {
   const routes: SitemapEntry[] = []
 
-  // Create entries for each locale and static page
   for (const locale of routing.locales) {
     for (const { path, priority } of STATIC_PAGES) {
       routes.push({
@@ -70,7 +69,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const productUrls: SitemapEntry[] = []
 
-    // Create product URLs for each locale
     for (const product of products) {
       for (const locale of routing.locales) {
         productUrls.push({

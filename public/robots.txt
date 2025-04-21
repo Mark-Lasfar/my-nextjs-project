@@ -92,11 +92,15 @@ Disallow: /
 User-agent: Nikto
 Disallow: /
 
+# ----- Host -----
+Host: https://hager-zon.vercel.app
+
 # ----- Sitemaps -----
 Sitemap: https://hager-zon.vercel.app/sitemap.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-products.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-blog.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-images.xml
+
 
 # ----- Clean Parameters -----
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
