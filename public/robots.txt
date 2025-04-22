@@ -1,8 +1,31 @@
 # =============================================
 # MGZon - Ultimate Robots.txt
 # Managed by: ibrahim-lasfar
-# Last Updated: 2025-04-22 02:47:00 UTC
+# Last Updated: 2025-04-22 04:12:36 UTC
 # =============================================
+
+User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /main.css
+Allow: /main.js
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
+Disallow: /account/
+Disallow: /test/
+Disallow: /staging/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /tmp/
+
+User-agent: Googlebot
+Allow: /products/
+Allow: /blog/
+Allow: /categories/
+Disallow: /tmp/
+Disallow: /search/
 
 User-agent: Bingbot
 Allow: /products/
@@ -25,10 +48,8 @@ Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 
-# ----- Host -----
 Host: https://hager-zon.vercel.app
 
-# ----- Sitemaps -----
 Sitemap: https://hager-zon.vercel.app/sitemap.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-products.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-blog.xml
