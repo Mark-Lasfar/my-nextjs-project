@@ -1,7 +1,7 @@
 # =============================================
 # MGZon - Ultimate Robots.txt
 # Managed by: ibrahim-lasfar
-# Last Updated: 2025-04-19 07:11:31 UTC
+# Last Updated: 2025-04-22 01:49:29 UTC
 # =============================================
 
 # ----- Global Rules -----
@@ -101,7 +101,6 @@ Sitemap: https://hager-zon.vercel.app/sitemap-products.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-blog.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-images.xml
 
-
 # ----- Clean Parameters -----
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
 Clean-param: fbclid&gclid&fb_ref
@@ -111,4 +110,4 @@ Clean-param: ref&source&via
 
 # ===== End of File =====
 # Generated for: ibrahim-lasfar
-# Generation Date: 2025-04-19 07:11:31 UTC
+# Generation Date: 2025-04-22 01:49:29 UTC
