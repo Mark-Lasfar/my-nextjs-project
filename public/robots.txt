@@ -1,6 +1,3 @@
-# TEST ROBOTS - 2025-04-22
-
-
 User-agent: *
 Allow: /$
 Allow: /index.html
