@@ -4,7 +4,9 @@ import Product from '@/lib/db/models/product.model'
 
 export async function GET() {
   const { site: { url } } = await getSetting()
-  const baseUrl = url || 'https://hager-zon.vercel.app'
+  const baseUrl = (url && url.startsWith('https://hager-zon.vercel.app'))
+    ? url.replace(/\/+$/, '')
+    : 'https://hager-zon.vercel.app'
   const now = new Date().toISOString()
 
   const products = await Product.find({ isPublished: true })

@@ -1,0 +1,410 @@
+a5d13d7de5bc831a47586dd60c78aa42
+"use strict";
+
+/* istanbul ignore next */
+function cov_u96tpownv() {
+  var path = "/home/mark/Downloads/nextjs-amazona-main/app/sitemap-blog.xml/route.ts";
+  var hash = "b892fe984b2d7dc47f7b01bbdf6b2640f91d5fc9";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/mark/Downloads/nextjs-amazona-main/app/sitemap-blog.xml/route.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 19
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 16
+        },
+        end: {
+          line: 11,
+          column: 38
+        }
+      },
+      "4": {
+        start: {
+          line: 12,
+          column: 24
+        },
+        end: {
+          line: 12,
+          column: 68
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 4
+        },
+        end: {
+          line: 49,
+          column: 5
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 34
+        },
+        end: {
+          line: 15,
+          column: 73
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 24
+        },
+        end: {
+          line: 16,
+          column: 61
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 23
+        },
+        end: {
+          line: 17,
+          column: 47
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 22
+        },
+        end: {
+          line: 28,
+          column: 9
+        }
+      },
+      "10": {
+        start: {
+          line: 29,
+          column: 20
+        },
+        end: {
+          line: 38,
+          column: 10
+        }
+      },
+      "11": {
+        start: {
+          line: 31,
+          column: 22
+        },
+        end: {
+          line: 37,
+          column: 11
+        }
+      },
+      "12": {
+        start: {
+          line: 39,
+          column: 8
+        },
+        end: {
+          line: 43,
+          column: 11
+        }
+      },
+      "13": {
+        start: {
+          line: 45,
+          column: 8
+        },
+        end: {
+          line: 45,
+          column: 63
+        }
+      },
+      "14": {
+        start: {
+          line: 46,
+          column: 8
+        },
+        end: {
+          line: 48,
+          column: 11
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 9
+          },
+          end: {
+            line: 7,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 20
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "GET",
+        decl: {
+          start: {
+            line: 13,
+            column: 15
+          },
+          end: {
+            line: 13,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 21
+          },
+          end: {
+            line: 50,
+            column: 1
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 31,
+            column: 14
+          },
+          end: {
+            line: 31,
+            column: 15
+          }
+        },
+        loc: {
+          start: {
+            line: 31,
+            column: 22
+          },
+          end: {
+            line: 37,
+            column: 11
+          }
+        },
+        line: 31
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 16,
+            column: 24
+          },
+          end: {
+            line: 16,
+            column: 61
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 16,
+            column: 24
+          },
+          end: {
+            line: 16,
+            column: 27
+          }
+        }, {
+          start: {
+            line: 16,
+            column: 31
+          },
+          end: {
+            line: 16,
+            column: 61
+          }
+        }],
+        line: 16
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["/home/mark/Downloads/nextjs-amazona-main/app/sitemap-blog.xml/route.ts"],
+      sourcesContent: ["import { NextResponse } from 'next/server'\nimport { getSetting } from '@/lib/actions/setting.actions'\n\nexport async function GET() {\n  try {\n    const { site: { url } } = await getSetting()\n    const baseUrl = url || 'https://hager-zon.vercel.app'\n    const nowIso = new Date().toISOString()\n\n    // Example blog entries.\n    const blogs = [\n      {\n        slug: 'first-blog-post',\n        updatedAt: nowIso,\n      },\n      {\n        slug: 'another-blog-post',\n        updatedAt: nowIso,\n      }\n    ]\n\n    const xml = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  ${blogs\n    .map(\n      (blog) => `\n    <url>\n      <loc>${baseUrl}/blog/${blog.slug}</loc>\n      <lastmod>${new Date(blog.updatedAt).toISOString()}</lastmod>\n      <changefreq>weekly</changefreq>\n      <priority>0.7</priority>\n    </url>`\n    )\n    .join('\\n')}\n</urlset>`\n\n    return new NextResponse(xml, {\n      headers: {\n        'Content-Type': 'application/xml'\n      }\n    })\n  } catch (error) {\n    console.error('Error generating blog sitemap:', error)\n    return new NextResponse('Error generating sitemap', { status: 500 })\n  }\n}"],
+      names: ["GET", "site", "url", "getSetting", "baseUrl", "nowIso", "Date", "toISOString", "blogs", "slug", "updatedAt", "xml", "map", "blog", "join", "NextResponse", "headers", "error", "console", "status"],
+      mappings: ";;;;+BAGsBA;;;eAAAA;;;wBAHO;gCACF;AAEpB,eAAeA;IACpB,IAAI;QACF,MAAM,EAAEC,MAAM,EAAEC,GAAG,EAAE,EAAE,GAAG,MAAMC,IAAAA,0BAAU;QAC1C,MAAMC,UAAUF,OAAO;QACvB,MAAMG,SAAS,IAAIC,OAAOC,WAAW;QAErC,wBAAwB;QACxB,MAAMC,QAAQ;YACZ;gBACEC,MAAM;gBACNC,WAAWL;YACb;YACA;gBACEI,MAAM;gBACNC,WAAWL;YACb;SACD;QAED,MAAMM,MAAM,CAAC;;EAEf,EAAEH,MACCI,GAAG,CACF,CAACC,OAAS,CAAC;;WAEN,EAAET,QAAQ,MAAM,EAAES,KAAKJ,IAAI,CAAC;eACxB,EAAE,IAAIH,KAAKO,KAAKH,SAAS,EAAEH,WAAW,GAAG;;;UAG9C,CAAC,EAENO,IAAI,CAAC,MAAM;SACP,CAAC;QAEN,OAAO,IAAIC,oBAAY,CAACJ,KAAK;YAC3BK,SAAS;gBACP,gBAAgB;YAClB;QACF;IACF,EAAE,OAAOC,OAAO;QACdC,QAAQD,KAAK,CAAC,kCAAkCA;QAChD,OAAO,IAAIF,oBAAY,CAAC,4BAA4B;YAAEI,QAAQ;QAAI;IACpE;AACF"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "b892fe984b2d7dc47f7b01bbdf6b2640f91d5fc9"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_u96tpownv = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_u96tpownv();
+cov_u96tpownv().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_u96tpownv().s[1]++;
+Object.defineProperty(exports, "GET", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_u96tpownv().f[0]++;
+    cov_u96tpownv().s[2]++;
+    return GET;
+  }
+});
+const _server =
+/* istanbul ignore next */
+(cov_u96tpownv().s[3]++, require("next/server"));
+const _settingactions =
+/* istanbul ignore next */
+(cov_u96tpownv().s[4]++, require("../../lib/actions/setting.actions"));
+async function GET() {
+  /* istanbul ignore next */
+  cov_u96tpownv().f[1]++;
+  cov_u96tpownv().s[5]++;
+  try {
+    const {
+      site: {
+        url
+      }
+    } =
+    /* istanbul ignore next */
+    (cov_u96tpownv().s[6]++, await (0, _settingactions.getSetting)());
+    const baseUrl =
+    /* istanbul ignore next */
+    (cov_u96tpownv().s[7]++,
+    /* istanbul ignore next */
+    (cov_u96tpownv().b[0][0]++, url) ||
+    /* istanbul ignore next */
+    (cov_u96tpownv().b[0][1]++, 'https://hager-zon.vercel.app'));
+    const nowIso =
+    /* istanbul ignore next */
+    (cov_u96tpownv().s[8]++, new Date().toISOString());
+    // Example blog entries.
+    const blogs =
+    /* istanbul ignore next */
+    (cov_u96tpownv().s[9]++, [{
+      slug: 'first-blog-post',
+      updatedAt: nowIso
+    }, {
+      slug: 'another-blog-post',
+      updatedAt: nowIso
+    }]);
+    const xml =
+    /* istanbul ignore next */
+    (cov_u96tpownv().s[10]++, `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${blogs.map(blog => {
+      /* istanbul ignore next */
+      cov_u96tpownv().f[2]++;
+      cov_u96tpownv().s[11]++;
+      return `
+    <url>
+      <loc>${baseUrl}/blog/${blog.slug}</loc>
+      <lastmod>${new Date(blog.updatedAt).toISOString()}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>`;
+    }).join('\n')}
+</urlset>`);
+    /* istanbul ignore next */
+    cov_u96tpownv().s[12]++;
+    return new _server.NextResponse(xml, {
+      headers: {
+        'Content-Type': 'application/xml'
+      }
+    });
+  } catch (error) {
+    /* istanbul ignore next */
+    cov_u96tpownv().s[13]++;
+    console.error('Error generating blog sitemap:', error);
+    /* istanbul ignore next */
+    cov_u96tpownv().s[14]++;
+    return new _server.NextResponse('Error generating sitemap', {
+      status: 500
+    });
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfdTk2dHBvd252IiwiYWN0dWFsQ292ZXJhZ2UiLCJzIiwiR0VUIiwiZiIsInNpdGUiLCJ1cmwiLCJfc2V0dGluZ2FjdGlvbnMiLCJnZXRTZXR0aW5nIiwiYmFzZVVybCIsImIiLCJub3dJc28iLCJEYXRlIiwidG9JU09TdHJpbmciLCJibG9ncyIsInNsdWciLCJ1cGRhdGVkQXQiLCJ4bWwiLCJtYXAiLCJibG9nIiwiam9pbiIsIl9zZXJ2ZXIiLCJOZXh0UmVzcG9uc2UiLCJoZWFkZXJzIiwiZXJyb3IiLCJjb25zb2xlIiwic3RhdHVzIl0sInNvdXJjZXMiOlsiL2hvbWUvbWFyay9Eb3dubG9hZHMvbmV4dGpzLWFtYXpvbmEtbWFpbi9hcHAvc2l0ZW1hcC1ibG9nLnhtbC9yb3V0ZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZXh0UmVzcG9uc2UgfSBmcm9tICduZXh0L3NlcnZlcidcbmltcG9ydCB7IGdldFNldHRpbmcgfSBmcm9tICdAL2xpYi9hY3Rpb25zL3NldHRpbmcuYWN0aW9ucydcblxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEdFVCgpIHtcbiAgdHJ5IHtcbiAgICBjb25zdCB7IHNpdGU6IHsgdXJsIH0gfSA9IGF3YWl0IGdldFNldHRpbmcoKVxuICAgIGNvbnN0IGJhc2VVcmwgPSB1cmwgfHwgJ2h0dHBzOi8vaGFnZXItem9uLnZlcmNlbC5hcHAnXG4gICAgY29uc3Qgbm93SXNvID0gbmV3IERhdGUoKS50b0lTT1N0cmluZygpXG5cbiAgICAvLyBFeGFtcGxlIGJsb2cgZW50cmllcy5cbiAgICBjb25zdCBibG9ncyA9IFtcbiAgICAgIHtcbiAgICAgICAgc2x1ZzogJ2ZpcnN0LWJsb2ctcG9zdCcsXG4gICAgICAgIHVwZGF0ZWRBdDogbm93SXNvLFxuICAgICAgfSxcbiAgICAgIHtcbiAgICAgICAgc2x1ZzogJ2Fub3RoZXItYmxvZy1wb3N0JyxcbiAgICAgICAgdXBkYXRlZEF0OiBub3dJc28sXG4gICAgICB9XG4gICAgXVxuXG4gICAgY29uc3QgeG1sID0gYDw/eG1sIHZlcnNpb249XCIxLjBcIiBlbmNvZGluZz1cIlVURi04XCI/PlxuPHVybHNldCB4bWxucz1cImh0dHA6Ly93d3cuc2l0ZW1hcHMub3JnL3NjaGVtYXMvc2l0ZW1hcC8wLjlcIj5cbiAgJHtibG9nc1xuICAgIC5tYXAoXG4gICAgICAoYmxvZykgPT4gYFxuICAgIDx1cmw+XG4gICAgICA8bG9jPiR7YmFzZVVybH0vYmxvZy8ke2Jsb2cuc2x1Z308L2xvYz5cbiAgICAgIDxsYXN0bW9kPiR7bmV3IERhdGUoYmxvZy51cGRhdGVkQXQpLnRvSVNPU3RyaW5nKCl9PC9sYXN0bW9kPlxuICAgICAgPGNoYW5nZWZyZXE+d2Vla2x5PC9jaGFuZ2VmcmVxPlxuICAgICAgPHByaW9yaXR5PjAuNzwvcHJpb3JpdHk+XG4gICAgPC91cmw+YFxuICAgIClcbiAgICAuam9pbignXFxuJyl9XG48L3VybHNldD5gXG5cbiAgICByZXR1cm4gbmV3IE5leHRSZXNwb25zZSh4bWwsIHtcbiAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi94bWwnXG4gICAgICB9XG4gICAgfSlcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKCdFcnJvciBnZW5lcmF0aW5nIGJsb2cgc2l0ZW1hcDonLCBlcnJvcilcbiAgICByZXR1cm4gbmV3IE5leHRSZXNwb25zZSgnRXJyb3IgZ2VuZXJhdGluZyBzaXRlbWFwJywgeyBzdGF0dXM6IDUwMCB9KVxuICB9XG59Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFNSTtJQUFBQSxhQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxhQUFBO0FBQUFBLGFBQUEsR0FBQUUsQ0FBQTs7Ozs7OytCQUhrQjs7Ozs7O1dBQUFDLEdBQUE7Ozs7O2lDQUhPOzs7aUNBQ0Y7QUFFcEIsZUFBZUEsSUFBQTtFQUFBO0VBQUFILGFBQUEsR0FBQUksQ0FBQTtFQUFBSixhQUFBLEdBQUFFLENBQUE7RUFDcEIsSUFBSTtJQUNGLE1BQU07TUFBRUcsSUFBQSxFQUFNO1FBQUVDO01BQUc7SUFBRSxDQUFFO0lBQUE7SUFBQSxDQUFBTixhQUFBLEdBQUFFLENBQUEsT0FBRyxNQUFNLElBQUFLLGVBQUEsQ0FBQUMsVUFBVTtJQUMxQyxNQUFNQyxPQUFBO0lBQUE7SUFBQSxDQUFBVCxhQUFBLEdBQUFFLENBQUE7SUFBVTtJQUFBLENBQUFGLGFBQUEsR0FBQVUsQ0FBQSxVQUFBSixHQUFBO0lBQUE7SUFBQSxDQUFBTixhQUFBLEdBQUFVLENBQUEsVUFBTztJQUN2QixNQUFNQyxNQUFBO0lBQUE7SUFBQSxDQUFBWCxhQUFBLEdBQUFFLENBQUEsT0FBUyxJQUFJVSxJQUFBLEdBQU9DLFdBQVc7SUFFckM7SUFDQSxNQUFNQyxLQUFBO0lBQUE7SUFBQSxDQUFBZCxhQUFBLEdBQUFFLENBQUEsT0FBUSxDQUNaO01BQ0VhLElBQUEsRUFBTTtNQUNOQyxTQUFBLEVBQVdMO0lBQ2IsR0FDQTtNQUNFSSxJQUFBLEVBQU07TUFDTkMsU0FBQSxFQUFXTDtJQUNiLEVBQ0Q7SUFFRCxNQUFNTSxHQUFBO0lBQUE7SUFBQSxDQUFBakIsYUFBQSxHQUFBRSxDQUFBLFFBQU07O0lBRVpZLEtBQUEsQ0FDQ0ksR0FBRyxDQUNEQyxJQUFBLElBQVM7TUFBQTtNQUFBbkIsYUFBQSxHQUFBSSxDQUFBO01BQUFKLGFBQUEsR0FBQUUsQ0FBQTtNQUFBOzthQUVITyxPQUFBLFNBQWdCVSxJQUFBLENBQUtKLElBQUk7aUJBQ3JCLElBQUlILElBQUEsQ0FBS08sSUFBQSxDQUFLSCxTQUFTLEVBQUVILFdBQVc7OztXQUcxQztJQUFELENBQUMsRUFFTk8sSUFBSSxDQUFDO1VBQ0E7SUFBQTtJQUFBcEIsYUFBQSxHQUFBRSxDQUFBO0lBRU4sT0FBTyxJQUFJbUIsT0FBQSxDQUFBQyxZQUFZLENBQUNMLEdBQUEsRUFBSztNQUMzQk0sT0FBQSxFQUFTO1FBQ1AsZ0JBQWdCO01BQ2xCO0lBQ0Y7RUFDRixFQUFFLE9BQU9DLEtBQUEsRUFBTztJQUFBO0lBQUF4QixhQUFBLEdBQUFFLENBQUE7SUFDZHVCLE9BQUEsQ0FBUUQsS0FBSyxDQUFDLGtDQUFrQ0EsS0FBQTtJQUFBO0lBQUF4QixhQUFBLEdBQUFFLENBQUE7SUFDaEQsT0FBTyxJQUFJbUIsT0FBQSxDQUFBQyxZQUFZLENBQUMsNEJBQTRCO01BQUVJLE1BQUEsRUFBUTtJQUFJO0VBQ3BFO0FBQ0YiLCJpZ25vcmVMaXN0IjpbXX0=

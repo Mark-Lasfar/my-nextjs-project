@@ -44,7 +44,7 @@ export async function generateMetadata({
     const {
       site: { slogan, name, description, url },
     } = await getSetting()
-    const baseUrl = url || 'https://hager-zon.vercel.app'
+    const baseUrl = url || process.env.NEXT_PUBLIC_BASE_URL || 'https://hager-zon.vercel.app'
 
     const keywords = [
       // Primary Keywords
@@ -126,7 +126,6 @@ export async function generateMetadata({
       'اعلي تسوق',
       'اعلي تسوق عبر الإنترنت',
 
-      
       // Shopping Experience
       'online shopping mgzon',
       'mgzon products',
@@ -177,10 +176,10 @@ export async function generateMetadata({
         ),
       },
       verification: {
-        google: 'PQo-i3w5jhSFT2MCdZxg0HnFOHDQ-iYMLNg8rYeFtXM',
-        yandex: 'yandex-verification-code',
+        google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'PQo-i3w5jhSFT2MCdZxg0HnFOHDQ-iYMLNg8rYeFtXM',
+        yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || 'yandex-verification-code',
         other: {
-          'msvalidate.01': 'B43661E5D49F850A9492D8B9EF683229',
+          'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION || 'B43661E5D49F850A9492D8B9EF683229',
           'baidu-site-verification': 'baidu-verification-code',
         },
       },
@@ -260,9 +259,9 @@ export async function generateMetadata({
       title: 'MGZon E-commerce',
       description: 'Your ultimate shopping destination',
       verification: {
-        google: 'PQo-i3w5jhSFT2MCdZxg0HnFOHDQ-iYMLNg8rYeFtXM',
+        google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || 'PQo-i3w5jhSFT2MCdZxg0HnFOHDQ-iYMLNg8rYeFtXM',
         other: {
-          'msvalidate.01': 'B43661E5D49F850A9492D8B9EF683229',
+          'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION || 'B43661E5D49F850A9492D8B9EF683229',
         },
       },
     }
@@ -301,7 +300,7 @@ export default async function AppLayout({
     const currencyCookie = cookieStore.get('currency')
     const currency = currencyCookie?.value || 'USD'
 
-    const baseUrl = setting.site.url || 'https://hager-zon.vercel.app'
+    const baseUrl = setting.site.url || process.env.NEXT_PUBLIC_BASE_URL || 'https://hager-zon.vercel.app'
 
     return (
       <html
@@ -346,6 +345,18 @@ export default async function AppLayout({
               href={`${baseUrl}/${loc}`}
             />
           ))}
+          {/* Google Analytics (GTM/GA4) */}
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTM_ID}`}></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.GTM_ID}');
+              `,
+            }}
+          />
         </head>
         <body
           className={`min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}

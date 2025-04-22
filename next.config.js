@@ -32,7 +32,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'hager-8k6rpw9fd-mark-lasfars-projects.vercel.app',
+        hostname: 'hager-zon.vercel.app',
         port: '',
       },
       {

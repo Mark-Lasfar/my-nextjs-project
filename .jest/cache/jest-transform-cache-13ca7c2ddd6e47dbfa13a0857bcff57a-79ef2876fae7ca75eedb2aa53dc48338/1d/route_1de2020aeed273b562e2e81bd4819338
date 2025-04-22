@@ -1,0 +1,435 @@
+e389e4a519d5d454be3ace0bf063a360
+"use strict";
+
+/* istanbul ignore next */
+function cov_25y74uxxjp() {
+  var path = "/home/mark/Downloads/nextjs-amazona-main/app/sitemap.xml/route.ts";
+  var hash = "04494e97b86aeeebabd493dd38806920273fb187";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/mark/Downloads/nextjs-amazona-main/app/sitemap.xml/route.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 4,
+          column: 3
+        }
+      },
+      "1": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 10,
+          column: 3
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 19
+        }
+      },
+      "3": {
+        start: {
+          line: 11,
+          column: 16
+        },
+        end: {
+          line: 11,
+          column: 38
+        }
+      },
+      "4": {
+        start: {
+          line: 12,
+          column: 24
+        },
+        end: {
+          line: 12,
+          column: 68
+        }
+      },
+      "5": {
+        start: {
+          line: 14,
+          column: 30
+        },
+        end: {
+          line: 14,
+          column: 69
+        }
+      },
+      "6": {
+        start: {
+          line: 15,
+          column: 20
+        },
+        end: {
+          line: 15,
+          column: 57
+        }
+      },
+      "7": {
+        start: {
+          line: 16,
+          column: 16
+        },
+        end: {
+          line: 16,
+          column: 40
+        }
+      },
+      "8": {
+        start: {
+          line: 17,
+          column: 18
+        },
+        end: {
+          line: 33,
+          column: 5
+        }
+      },
+      "9": {
+        start: {
+          line: 34,
+          column: 16
+        },
+        end: {
+          line: 43,
+          column: 10
+        }
+      },
+      "10": {
+        start: {
+          line: 36,
+          column: 22
+        },
+        end: {
+          line: 42,
+          column: 11
+        }
+      },
+      "11": {
+        start: {
+          line: 44,
+          column: 4
+        },
+        end: {
+          line: 49,
+          column: 7
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 9
+          },
+          end: {
+            line: 7,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 20
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "GET",
+        decl: {
+          start: {
+            line: 13,
+            column: 15
+          },
+          end: {
+            line: 13,
+            column: 18
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 21
+          },
+          end: {
+            line: 50,
+            column: 1
+          }
+        },
+        line: 13
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 36,
+            column: 14
+          },
+          end: {
+            line: 36,
+            column: 15
+          }
+        },
+        loc: {
+          start: {
+            line: 36,
+            column: 22
+          },
+          end: {
+            line: 42,
+            column: 11
+          }
+        },
+        line: 36
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 20
+          },
+          end: {
+            line: 15,
+            column: 57
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 15,
+            column: 20
+          },
+          end: {
+            line: 15,
+            column: 23
+          }
+        }, {
+          start: {
+            line: 15,
+            column: 27
+          },
+          end: {
+            line: 15,
+            column: 57
+          }
+        }],
+        line: 15
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 38,
+            column: 23
+          },
+          end: {
+            line: 38,
+            column: 45
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 38,
+            column: 30
+          },
+          end: {
+            line: 38,
+            column: 40
+          }
+        }, {
+          start: {
+            line: 38,
+            column: 43
+          },
+          end: {
+            line: 38,
+            column: 45
+          }
+        }],
+        line: 38
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 41,
+            column: 18
+          },
+          end: {
+            line: 41,
+            column: 45
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 41,
+            column: 32
+          },
+          end: {
+            line: 41,
+            column: 37
+          }
+        }, {
+          start: {
+            line: 41,
+            column: 40
+          },
+          end: {
+            line: 41,
+            column: 45
+          }
+        }],
+        line: 41
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      version: 3,
+      sources: ["/home/mark/Downloads/nextjs-amazona-main/app/sitemap.xml/route.ts"],
+      sourcesContent: ["import { NextResponse } from 'next/server'\nimport { getSetting } from '@/lib/actions/setting.actions'\n\nexport async function GET() {\n  const { site: { url } } = await getSetting()\n  const baseUrl = url || 'https://hager-zon.vercel.app'\n  const now = new Date().toISOString()\n\n  const pages = [\n    '',\n    'about-us',\n    'contact-us',\n    'products',\n    'categories',\n    'cart',\n    'checkout',\n    'account',\n    'orders',\n    'wishlist',\n    'privacy-policy',\n    'terms-of-service',\n    'shipping-policy',\n    'return-policy',\n    'faq',\n    // Add more static pages if needed\n  ]\n\n  const xml = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  ${pages\n    .map(\n      (page) => `\n    <url>\n      <loc>${baseUrl}${page ? `/${page}` : ''}</loc>\n      <lastmod>${now}</lastmod>\n      <changefreq>weekly</changefreq>\n      <priority>${page === '' ? '1.0' : '0.7'}</priority>\n    </url>`\n    )\n    .join('')}\n</urlset>`\n\n  return new NextResponse(xml, {\n    headers: {\n      'Content-Type': 'application/xml',\n      'Cache-Control': 'public, max-age=3600, stale-while-revalidate=59',\n    },\n  })\n}"],
+      names: ["GET", "site", "url", "getSetting", "baseUrl", "now", "Date", "toISOString", "pages", "xml", "map", "page", "join", "NextResponse", "headers"],
+      mappings: ";;;;+BAGsBA;;;eAAAA;;;wBAHO;gCACF;AAEpB,eAAeA;IACpB,MAAM,EAAEC,MAAM,EAAEC,GAAG,EAAE,EAAE,GAAG,MAAMC,IAAAA,0BAAU;IAC1C,MAAMC,UAAUF,OAAO;IACvB,MAAMG,MAAM,IAAIC,OAAOC,WAAW;IAElC,MAAMC,QAAQ;QACZ;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;QACA;KAED;IAED,MAAMC,MAAM,CAAC;;EAEb,EAAED,MACCE,GAAG,CACF,CAACC,OAAS,CAAC;;WAEN,EAAEP,UAAUO,OAAO,CAAC,CAAC,EAAEA,MAAM,GAAG,GAAG;eAC/B,EAAEN,IAAI;;gBAEL,EAAEM,SAAS,KAAK,QAAQ,MAAM;UACpC,CAAC,EAENC,IAAI,CAAC,IAAI;SACL,CAAC;IAER,OAAO,IAAIC,oBAAY,CAACJ,KAAK;QAC3BK,SAAS;YACP,gBAAgB;YAChB,iBAAiB;QACnB;IACF;AACF"
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "04494e97b86aeeebabd493dd38806920273fb187"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_25y74uxxjp = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+cov_25y74uxxjp();
+cov_25y74uxxjp().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+cov_25y74uxxjp().s[1]++;
+Object.defineProperty(exports, "GET", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_25y74uxxjp().f[0]++;
+    cov_25y74uxxjp().s[2]++;
+    return GET;
+  }
+});
+const _server =
+/* istanbul ignore next */
+(cov_25y74uxxjp().s[3]++, require("next/server"));
+const _settingactions =
+/* istanbul ignore next */
+(cov_25y74uxxjp().s[4]++, require("../../lib/actions/setting.actions"));
+async function GET() {
+  /* istanbul ignore next */
+  cov_25y74uxxjp().f[1]++;
+  const {
+    site: {
+      url
+    }
+  } =
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().s[5]++, await (0, _settingactions.getSetting)());
+  const baseUrl =
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().s[6]++,
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().b[0][0]++, url) ||
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().b[0][1]++, 'https://hager-zon.vercel.app'));
+  const now =
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().s[7]++, new Date().toISOString());
+  const pages =
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().s[8]++, ['', 'about-us', 'contact-us', 'products', 'categories', 'cart', 'checkout', 'account', 'orders', 'wishlist', 'privacy-policy', 'terms-of-service', 'shipping-policy', 'return-policy', 'faq']);
+  const xml =
+  /* istanbul ignore next */
+  (cov_25y74uxxjp().s[9]++, `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${pages.map(page => {
+    /* istanbul ignore next */
+    cov_25y74uxxjp().f[2]++;
+    cov_25y74uxxjp().s[10]++;
+    return `
+    <url>
+      <loc>${baseUrl}${page ?
+    /* istanbul ignore next */
+    (cov_25y74uxxjp().b[1][0]++, `/${page}`) :
+    /* istanbul ignore next */
+    (cov_25y74uxxjp().b[1][1]++, '')}</loc>
+      <lastmod>${now}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>${page === '' ?
+    /* istanbul ignore next */
+    (cov_25y74uxxjp().b[2][0]++, '1.0') :
+    /* istanbul ignore next */
+    (cov_25y74uxxjp().b[2][1]++, '0.7')}</priority>
+    </url>`;
+  }).join('')}
+</urlset>`);
+  /* istanbul ignore next */
+  cov_25y74uxxjp().s[11]++;
+  return new _server.NextResponse(xml, {
+    headers: {
+      'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=3600, stale-while-revalidate=59'
+    }
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMjV5NzR1eHhqcCIsImFjdHVhbENvdmVyYWdlIiwicyIsIkdFVCIsImYiLCJzaXRlIiwidXJsIiwiX3NldHRpbmdhY3Rpb25zIiwiZ2V0U2V0dGluZyIsImJhc2VVcmwiLCJiIiwibm93IiwiRGF0ZSIsInRvSVNPU3RyaW5nIiwicGFnZXMiLCJ4bWwiLCJtYXAiLCJwYWdlIiwiam9pbiIsIl9zZXJ2ZXIiLCJOZXh0UmVzcG9uc2UiLCJoZWFkZXJzIl0sInNvdXJjZXMiOlsiL2hvbWUvbWFyay9Eb3dubG9hZHMvbmV4dGpzLWFtYXpvbmEtbWFpbi9hcHAvc2l0ZW1hcC54bWwvcm91dGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTmV4dFJlc3BvbnNlIH0gZnJvbSAnbmV4dC9zZXJ2ZXInXG5pbXBvcnQgeyBnZXRTZXR0aW5nIH0gZnJvbSAnQC9saWIvYWN0aW9ucy9zZXR0aW5nLmFjdGlvbnMnXG5cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQoKSB7XG4gIGNvbnN0IHsgc2l0ZTogeyB1cmwgfSB9ID0gYXdhaXQgZ2V0U2V0dGluZygpXG4gIGNvbnN0IGJhc2VVcmwgPSB1cmwgfHwgJ2h0dHBzOi8vaGFnZXItem9uLnZlcmNlbC5hcHAnXG4gIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKVxuXG4gIGNvbnN0IHBhZ2VzID0gW1xuICAgICcnLFxuICAgICdhYm91dC11cycsXG4gICAgJ2NvbnRhY3QtdXMnLFxuICAgICdwcm9kdWN0cycsXG4gICAgJ2NhdGVnb3JpZXMnLFxuICAgICdjYXJ0JyxcbiAgICAnY2hlY2tvdXQnLFxuICAgICdhY2NvdW50JyxcbiAgICAnb3JkZXJzJyxcbiAgICAnd2lzaGxpc3QnLFxuICAgICdwcml2YWN5LXBvbGljeScsXG4gICAgJ3Rlcm1zLW9mLXNlcnZpY2UnLFxuICAgICdzaGlwcGluZy1wb2xpY3knLFxuICAgICdyZXR1cm4tcG9saWN5JyxcbiAgICAnZmFxJyxcbiAgICAvLyBBZGQgbW9yZSBzdGF0aWMgcGFnZXMgaWYgbmVlZGVkXG4gIF1cblxuICBjb25zdCB4bWwgPSBgPD94bWwgdmVyc2lvbj1cIjEuMFwiIGVuY29kaW5nPVwiVVRGLThcIj8+XG48dXJsc2V0IHhtbG5zPVwiaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOVwiPlxuICAke3BhZ2VzXG4gICAgLm1hcChcbiAgICAgIChwYWdlKSA9PiBgXG4gICAgPHVybD5cbiAgICAgIDxsb2M+JHtiYXNlVXJsfSR7cGFnZSA/IGAvJHtwYWdlfWAgOiAnJ308L2xvYz5cbiAgICAgIDxsYXN0bW9kPiR7bm93fTwvbGFzdG1vZD5cbiAgICAgIDxjaGFuZ2VmcmVxPndlZWtseTwvY2hhbmdlZnJlcT5cbiAgICAgIDxwcmlvcml0eT4ke3BhZ2UgPT09ICcnID8gJzEuMCcgOiAnMC43J308L3ByaW9yaXR5PlxuICAgIDwvdXJsPmBcbiAgICApXG4gICAgLmpvaW4oJycpfVxuPC91cmxzZXQ+YFxuXG4gIHJldHVybiBuZXcgTmV4dFJlc3BvbnNlKHhtbCwge1xuICAgIGhlYWRlcnM6IHtcbiAgICAgICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24veG1sJyxcbiAgICAgICdDYWNoZS1Db250cm9sJzogJ3B1YmxpYywgbWF4LWFnZT0zNjAwLCBzdGFsZS13aGlsZS1yZXZhbGlkYXRlPTU5JyxcbiAgICB9LFxuICB9KVxufSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUFNUTtJQUFBQSxjQUFBLFlBQUFBLENBQUE7TUFBQSxPQUFBQyxjQUFBO0lBQUE7RUFBQTtFQUFBLE9BQUFBLGNBQUE7QUFBQTtBQUFBRCxjQUFBO0FBQUFBLGNBQUEsR0FBQUUsQ0FBQTs7Ozs7OytCQUhjOzs7Ozs7V0FBQUMsR0FBQTs7Ozs7a0NBSE87OztrQ0FDRjtBQUVwQixlQUFlQSxJQUFBO0VBQUE7RUFBQUgsY0FBQSxHQUFBSSxDQUFBO0VBQ3BCLE1BQU07SUFBRUMsSUFBQSxFQUFNO01BQUVDO0lBQUc7RUFBRSxDQUFFO0VBQUE7RUFBQSxDQUFBTixjQUFBLEdBQUFFLENBQUEsT0FBRyxNQUFNLElBQUFLLGVBQUEsQ0FBQUMsVUFBVTtFQUMxQyxNQUFNQyxPQUFBO0VBQUE7RUFBQSxDQUFBVCxjQUFBLEdBQUFFLENBQUE7RUFBVTtFQUFBLENBQUFGLGNBQUEsR0FBQVUsQ0FBQSxVQUFBSixHQUFBO0VBQUE7RUFBQSxDQUFBTixjQUFBLEdBQUFVLENBQUEsVUFBTztFQUN2QixNQUFNQyxHQUFBO0VBQUE7RUFBQSxDQUFBWCxjQUFBLEdBQUFFLENBQUEsT0FBTSxJQUFJVSxJQUFBLEdBQU9DLFdBQVc7RUFFbEMsTUFBTUMsS0FBQTtFQUFBO0VBQUEsQ0FBQWQsY0FBQSxHQUFBRSxDQUFBLE9BQVEsQ0FDWixJQUNBLFlBQ0EsY0FDQSxZQUNBLGNBQ0EsUUFDQSxZQUNBLFdBQ0EsVUFDQSxZQUNBLGtCQUNBLG9CQUNBLG1CQUNBLGlCQUNBLE1BRUQ7RUFFRCxNQUFNYSxHQUFBO0VBQUE7RUFBQSxDQUFBZixjQUFBLEdBQUFFLENBQUEsT0FBTTs7SUFFVlksS0FBQSxDQUNDRSxHQUFHLENBQ0RDLElBQUEsSUFBUztJQUFBO0lBQUFqQixjQUFBLEdBQUFJLENBQUE7SUFBQUosY0FBQSxHQUFBRSxDQUFBO0lBQUE7O2FBRUhPLE9BQUEsR0FBVVEsSUFBQTtJQUFBO0lBQUEsQ0FBQWpCLGNBQUEsR0FBQVUsQ0FBQSxVQUFPLElBQUlPLElBQUEsRUFBTTtJQUFBO0lBQUEsQ0FBQWpCLGNBQUEsR0FBQVUsQ0FBQSxVQUFHO2lCQUMxQkMsR0FBQTs7a0JBRUNNLElBQUEsS0FBUztJQUFBO0lBQUEsQ0FBQWpCLGNBQUEsR0FBQVUsQ0FBQSxVQUFLO0lBQUE7SUFBQSxDQUFBVixjQUFBLEdBQUFVLENBQUEsVUFBUTtXQUM3QjtFQUFELENBQUMsRUFFTlEsSUFBSSxDQUFDO1VBQ0E7RUFBQTtFQUFBbEIsY0FBQSxHQUFBRSxDQUFBO0VBRVIsT0FBTyxJQUFJaUIsT0FBQSxDQUFBQyxZQUFZLENBQUNMLEdBQUEsRUFBSztJQUMzQk0sT0FBQSxFQUFTO01BQ1AsZ0JBQWdCO01BQ2hCLGlCQUFpQjtJQUNuQjtFQUNGO0FBQ0YiLCJpZ25vcmVMaXN0IjpbXX0=

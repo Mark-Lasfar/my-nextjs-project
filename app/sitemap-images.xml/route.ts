@@ -6,7 +6,10 @@ import path from 'path'
 export async function GET() {
   try {
     const { site: { url } } = await getSetting()
-    const baseUrl = url || 'https://hager-zon.vercel.app'
+    // Only allow the official domain, fallback to the correct one
+    const baseUrl = (url && url.startsWith('https://hager-zon.vercel.app'))
+      ? url.replace(/\/+$/, '')
+      : 'https://hager-zon.vercel.app'
     const nowIso = new Date().toISOString()
 
     const imagesDir = path.join(process.cwd(), 'public', 'images')
@@ -54,4 +57,4 @@ export async function GET() {
     console.error('Error generating images sitemap:', error)
     return new NextResponse('Error generating sitemap', { status: 500 })
   }
-}
+}   

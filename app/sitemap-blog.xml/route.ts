@@ -4,7 +4,10 @@ import { getSetting } from '@/lib/actions/setting.actions'
 export async function GET() {
   try {
     const { site: { url } } = await getSetting()
-    const baseUrl = url || 'https://hager-zon.vercel.app'
+    // استخدم الدومين الرسمي فقط
+    const baseUrl = (url && url.startsWith('https://hager-zon.vercel.app'))
+      ? url.replace(/\/+$/, '')
+      : 'https://hager-zon.vercel.app'
     const nowIso = new Date().toISOString()
 
     // Example blog entries.
