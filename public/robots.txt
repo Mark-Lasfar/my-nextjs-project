@@ -1,56 +1,15 @@
 # =============================================
 # MGZon - Ultimate Robots.txt
 # Managed by: ibrahim-lasfar
-# Last Updated: 2025-04-22 01:49:29 UTC
+# Last Updated: 2025-04-22 02:47:00 UTC
 # =============================================
-
-# ----- Global Rules -----
-User-agent: *
-Allow: /$
-Allow: /index.html
-Allow: /main.css
-Allow: /main.js
-
-# ----- Protected Directories -----
-Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /api/
-Disallow: /private/
-Disallow: /account/
-Disallow: /test/
-Disallow: /staging/
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /tmp/
-
-# ----- Rate Control -----
-Crawl-delay: 5
-Request-rate: 1/5
-
-# ----- Search Engines -----
-User-agent: Googlebot
-Allow: /products/
-Allow: /blog/
-Allow: /categories/
-Disallow: /tmp/
-Disallow: /search/
-Crawl-delay: 3
 
 User-agent: Bingbot
 Allow: /products/
 Allow: /blog/
 Allow: /categories/
 Disallow: /search/
-Crawl-delay: 5
 
-# ----- Image Crawlers -----
-User-agent: Googlebot-Image
-Allow: /images/
-Allow: /media/
-Allow: /products/
-Disallow: /temp-images/
-
-# ----- Block AI Crawlers -----
 User-agent: GPTBot
 Disallow: /
 User-agent: ChatGPT-User
@@ -66,32 +25,6 @@ Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 
-# ----- Block Aggressive Crawlers -----
-User-agent: AhrefsBot
-Disallow: /
-User-agent: SemrushBot
-Disallow: /
-User-agent: MJ12bot
-Disallow: /
-User-agent: DotBot
-Disallow: /
-User-agent: MauiBot
-Disallow: /
-
-# ----- Block Security Scanners -----
-User-agent: Nessus
-Disallow: /
-User-agent: Nmap
-Disallow: /
-User-agent: sqlmap
-Disallow: /
-User-agent: dirbuster
-Disallow: /
-User-agent: Nuclei
-Disallow: /
-User-agent: Nikto
-Disallow: /
-
 # ----- Host -----
 Host: https://hager-zon.vercel.app
 
@@ -101,13 +34,4 @@ Sitemap: https://hager-zon.vercel.app/sitemap-products.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-blog.xml
 Sitemap: https://hager-zon.vercel.app/sitemap-images.xml
 
-# ----- Clean Parameters -----
-Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
-Clean-param: fbclid&gclid&fb_ref
-Clean-param: _ga&_gl&_gac
-Clean-param: mc_cid&mc_eid
-Clean-param: ref&source&via
-
 # ===== End of File =====
-# Generated for: ibrahim-lasfar
-# Generation Date: 2025-04-22 01:49:29 UTC
