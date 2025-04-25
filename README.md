@@ -38,9 +38,6 @@ Implement a fully functional admin dashboard, featuring beautiful charts and ful
 Run Locally
 Clone the repository
 
-bash
-Copy
-Edit
 git clone https://github.com/Mark-Lasfar/MGZon.git
 cd MGZon
 Create an Environment File
@@ -63,16 +60,18 @@ Update the MONGODB_URI in your .env.local file with the local database URL.
 
 Seed the Database
 
-bash
-Copy
-Edit
+
 npm run seed
 Install Dependencies and Run Locally
 
-bash
-Copy
-Edit
 npm install --legacy-peer-deps
 npm run dev
+
+
+You can get the MGZon app 
+Through this link 
+
+https://drive.google.com/file/d/1-wr3dvpYtgAgAY9lc7pva_Dohoy9IdMk/view?usp=drivesdk
+
 Contact the Developer
 Email: marklasfar@gmail.com
