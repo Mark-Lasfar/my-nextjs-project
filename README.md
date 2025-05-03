@@ -12,7 +12,7 @@ Other Tools Uploadthing, Resend, Zod, etc.
 Live Demo
 Explore the full demo of the project here:
 
-https://mg-zon.vercel.app/
+https://hager-zon.vercel.app/
 
 What You'll Learn
 Build modern e-commerce website pages with Next.js server components.
@@ -38,7 +38,7 @@ Implement a fully functional admin dashboard, featuring beautiful charts and ful
 Run Locally
 Clone the repository
 
-git clone https://github.com/Mark-Lasfar/MGZon.git
+git clone https://github.com/Mark-Lasfar/my-nextjs-project
 cd MGZon
 Create an Environment File
 
