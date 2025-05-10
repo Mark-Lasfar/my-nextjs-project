@@ -23,7 +23,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold mb-4">Lead Developer</h2>
         <div className="flex flex-col items-center space-y-2">
           <Image
-            src="/images/ibrahim.jpg"
+            src="https://raw.githubusercontent.com/Mark-Lasfar/MGZon/refs/heads/main/public/images/ibrahim_elasfar.png"
             alt="Lead Developer"
             width={150}
             height={150}
