@@ -45,7 +45,7 @@ export default function Footer() {
                 <Link href="/page/blog">{t('Footer.Blog')}</Link>
               </li>
               <li>
-                <Link href="/page/about-us">
+                <Link href="/[locale]/about">
                   {t('Footer.About name', { name: site.name })}
                 </Link>
               </li>
