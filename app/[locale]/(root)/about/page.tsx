@@ -122,91 +122,128 @@ export default function AboutPage() {
       </section>
 
 
-      {/* Platform Integrations Section */}
-    <section className="py-16 bg-gray-50">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Integrations</h2>
-      <p className="text-lg text-center text-gray-600 mb-6 max-w-3xl mx-auto">
-        Our platform seamlessly integrates with some of the world's most popular e-commerce platforms, enabling businesses 
-        to manage their stores and expand their reach effortlessly. Explore our integrations with:
-      </p>
-    
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
-        {/* Amazon Integration */}
-        <div className="space-y-4">
-          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+{/* Platform Integrations Section */}
+<section className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-4">
+      Our Platform Integrations
+    </h2>
+    <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-600">
+      Seamlessly connect with the world's leading e-commerce platforms
+    </p>
+
+    <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+      {/* Amazon Integration */}
+      <div className="group">
+        <a 
+          href="https://www.amazon.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="flex justify-center h-16">
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
               alt="Amazon"
               width={120}
               height={40}
-              className="mx-auto"
+              className="h-full w-auto object-contain"
             />
-          </a>
-          <p className="text-lg text-gray-700 font-medium">Amazon</p>
-          <p className="text-sm text-gray-600">E-commerce platform for global selling</p>
-        </div>
-    
-        {/* Shopify Integration */}
-        <div className="space-y-4">
-          <a href="https://www.shopify.com" target="_blank" rel="noopener noreferrer">
+          </div>
+          <p className="mt-4 text-center text-lg font-medium text-gray-900 group-hover:text-orange-500 transition-colors">
+            Amazon
+          </p>
+        </a>
+      </div>
+
+      {/* Shopify Integration */}
+      <div className="group">
+        <a 
+          href="https://www.shopify.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="flex justify-center h-16">
             <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/0/05/Shopify_logo_2022.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg"
               alt="Shopify"
               width={120}
               height={40}
-              className="mx-auto"
+              className="h-full w-auto object-contain"
             />
-          </a>
-          <p className="text-lg text-gray-700 font-medium">Shopify</p>
-          <p className="text-sm text-gray-600">E-commerce platform for building online stores</p>
-        </div>
-    
-        {/* ShipBob Integration */}
-        <div className="space-y-4">
-          <a href="https://www.shipbob.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="https://www.shipbob.com/wp-content/uploads/2020/09/ShipBob_logo_full.png"
-              alt="ShipBob"
-              width={120}
-              height={40}
-              className="mx-auto"
-            />
-          </a>
-          <p className="text-lg text-gray-700 font-medium">ShipBob</p>
-          <p className="text-sm text-gray-600">Fulfillment and logistics management</p>
-        </div>
-    
-        {/* AliExpress Integration */}
-        <div className="space-y-4">
-          <a href="https://www.aliexpress.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/AliExpress_logo.svg"
-              alt="AliExpress"
-              width={120}
-              height={40}
-              className="mx-auto"
-            />
-          </a>
-          <p className="text-lg text-gray-700 font-medium">AliExpress</p>
-          <p className="text-sm text-gray-600">Global marketplace for e-commerce businesses</p>
-        </div>
-    
-        {/* 4PX Integration */}
-        <div className="space-y-4">
-          <a href="https://www.4px.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="https://www.4px.com/wp-content/uploads/2018/11/logo.png"
-              alt="4PX"
-              width={120}
-              height={40}
-              className="mx-auto"
-            />
-          </a>
-          <p className="text-lg text-gray-700 font-medium">4PX</p>
-          <p className="text-sm text-gray-600">Global shipping and logistics solution</p>
-        </div>
+          </div>
+          <p className="mt-4 text-center text-lg font-medium text-gray-900 group-hover:text-green-600 transition-colors">
+            Shopify
+          </p>
+        </a>
       </div>
-    </section>
+
+      {/* ShipBob Integration */}
+      <div className="group">
+        <a 
+          href="https://www.shipbob.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="flex justify-center items-center h-16">
+            <div className="bg-blue-600 text-white font-bold text-xl py-3 px-4 rounded w-full max-w-[120px] text-center">
+              ShipBob
+            </div>
+          </div>
+          <p className="mt-4 text-center text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
+            ShipBob
+          </p>
+        </a>
+      </div>
+
+      {/* AliExpress Integration */}
+      <div className="group">
+        <a 
+          href="https://www.aliexpress.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="flex justify-center items-center h-16">
+            <div className="bg-red-600 text-white font-bold text-xl py-3 px-4 rounded w-full max-w-[120px] text-center">
+              AliExpress
+            </div>
+          </div>
+          <p className="mt-4 text-center text-lg font-medium text-gray-900 group-hover:text-red-600 transition-colors">
+            AliExpress
+          </p>
+        </a>
+      </div>
+
+      {/* 4PX Integration */}
+      <div className="group">
+        <a 
+          href="https://www.4px.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        >
+          <div className="flex justify-center items-center h-16">
+            <div className="bg-green-600 text-white font-bold text-xl py-3 px-4 rounded w-full max-w-[120px] text-center">
+              4PX
+            </div>
+          </div>
+          <p className="mt-4 text-center text-lg font-medium text-gray-900 group-hover:text-green-600 transition-colors">
+            4PX Logistics
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div className="mt-12 text-center">
+      <p className="text-gray-600">
+        Don't see your platform? <a href="#contact" className="text-blue-600 hover:underline">Contact us</a> about custom integrations.
+      </p>
+    </div>
+  </div>
+</section>
 
 
       {/* Contact Info */}
