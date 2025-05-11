@@ -30,7 +30,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
           {[
             {
-              name: 'Ibrahim Al-Aafar',
+              name: 'Ibrahim Al-Aasfar',
               role: 'Full-stack Developer',
               email: 'ibrahim@company.com',
               image: 'https://raw.githubusercontent.com/Mark-Lasfar/MGZon/refs/heads/main/public/images/ibrahim_elasfar.png',
@@ -52,13 +52,15 @@ export default function AboutPage() {
               <div className="relative w-[150px] h-[150px]">
                 <div className="absolute inset-0 rounded-full animate-spin bg-gradient-to-tr from-blue-500 via-pink-500 to-purple-500 p-[4px]" />
                 <div className="absolute inset-0 rounded-full bg-white z-10 m-[4px]" />
-                <Image
-                  src={dev.image}
-                  alt={dev.name}
-                  width={150}
-                  height={150}
-                  className="rounded-full z-20 relative object-cover"
-                />
+                <div className="absolute inset-0 z-20 m-[4px] rounded-full overflow-hidden">
+                  <Image
+                    src={dev.image}
+                    alt={dev.name}
+                    width={150}
+                    height={150}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-bold">{dev.name}</h3>
               <p className="text-gray-600">{dev.role}</p>
@@ -73,50 +75,86 @@ export default function AboutPage() {
       <section>
         <h2 className="text-2xl font-semibold mb-6 text-center">Our Partners</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-          {['partner1.jpg', 'partner2.jpg', 'partner3.jpg'].map((img, index) => (
-            <div key={index}>
-              <Image
-                src={`/images/${img}`}
-                alt={`Partner ${index + 1}`}
-                width={100}
-                height={100}
-                className="rounded-full mx-auto"
-              />
-              <p className="mt-2 font-medium">Partner {index + 1}</p>
-              <p className="text-sm text-gray-600">partner{index + 1}@gmail.com</p>
-            </div>
+          {[
+            {
+              name: 'Dr. Saber Ismail',
+              email: 'saber.ismail@gmail.com',
+              image: '/images/saber.jpg',
+              link: '/partners/saber', 
+            },
+            {
+              name: 'Partner 2',
+              email: 'partner2@gmail.com',
+              image: '/images/partner2.jpg',
+              link: '/partners/2',
+            },
+            {
+              name: 'Partner 3',
+              email: 'partner3@gmail.com',
+              image: '/images/partner3.jpg',
+              link: '/partners/3',
+            },
+          ].map((partner, index) => (
+            <a
+              key={index}
+              href={partner.link}
+              className="transform hover:scale-105 transition-transform duration-300"
+            >
+              <div className="flex flex-col items-center space-y-2 shadow-md rounded-xl p-4 hover:shadow-lg bg-white">
+                <div className="relative w-[100px] h-[100px]">
+                  <div className="absolute inset-0 rounded-full animate-spin bg-gradient-to-tr from-yellow-400 via-pink-500 to-red-500 p-[2px]" />
+                  <div className="absolute inset-0 rounded-full bg-white z-10 m-[2px]" />
+                  <div className="absolute inset-0 z-20 m-[2px] rounded-full overflow-hidden">
+                    <Image
+                      src={partner.image}
+                      alt={partner.name}
+                      width={100}
+                      height={100}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <p className="mt-2 font-medium">{partner.name}</p>
+                <p className="text-sm text-gray-600">{partner.email}</p>
+              </div>
+            </a>
           ))}
         </div>
       </section>
+
 
       {/* Team Members */}
       <section>
         <h2 className="text-2xl font-semibold mb-6 text-center">Our Team</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
           {[...Array(8)].map((_, index) => {
-            const isManager = index === 0
+            const isManager = index === 0;
+      
+            const name = isManager ? 'Hager El-shamy' : `Staff Member ${index + 1}`;
+            const role = isManager ? 'Product Manager' : `staff${index + 1}@company.com`;
+            const image = isManager
+              ? 'https://raw.githubusercontent.com/Mark-Lasfar/Online-Shop/refs/heads/main/media/images/DSC_2019.JPG'
+              : `https://ui-avatars.com/api/?name=Staff+${index + 1}&background=random`;
       
             return (
-              <div key={index}>
-                <Image
-                  src={
-                    isManager
-                      ? 'https://raw.githubusercontent.com/Mark-Lasfar/Online-Shop/main/media/images/manager.jpg'
-                      : `https://ui-avatars.com/api/?name=Staff+${index + 1}&background=random`
-                  }
-                  alt={isManager ? 'Hagar Elshamy' : `Staff ${index + 1}`}
-                  width={100}
-                  height={100}
-                  className="rounded-full mx-auto"
-                />
-                <p className="mt-2 font-medium">
-                  {isManager ? 'Hagar Elshamy' : `Staff Member ${index + 1}`}
-                </p>
-                <p className="text-sm text-gray-600">
-                  {isManager ? 'Product Manager' : `staff${index + 1}@company.com`}
-                </p>
+              <div key={index} className="flex flex-col items-center space-y-2">
+                <div className="relative w-[100px] h-[100px]">
+                  <div className="absolute inset-0 rounded-full animate-spin bg-gradient-to-tr from-green-400 via-blue-500 to-purple-600 p-[2px]" />
+                  <div className="absolute inset-0 rounded-full bg-white z-10 m-[2px]" />
+                  <div className="absolute inset-0 z-20 m-[2px] rounded-full overflow-hidden">
+                    <Image
+                      src={image}
+                      alt={name}
+                      width={100}
+                      height={100}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+                <p className="mt-2 font-medium">{name}</p>
+                <p className="text-sm text-gray-600">{role}</p>
               </div>
-            )
+            );
           })}
         </div>
       </section>
