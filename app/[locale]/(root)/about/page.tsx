@@ -10,30 +10,64 @@ export default function AboutPage() {
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-16">
       {/* Intro Section */}
-      <section className="text-center">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+      <section className="text-center py-16 bg-blue-50">
+        <h1 className="text-4xl font-bold mb-4 text-gray-800">About Us</h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          We are a tech-driven company focused on building smart e-commerce solutions.
-          Our mission is to empower sellers and simplify the shopping experience for users.
+          We are a tech-driven company focused on building smart e-commerce solutions. 
+          Our mission is to empower sellers and simplify the shopping experience for users. 
+          We aim to provide seamless integration with leading platforms to enhance business efficiency and growth.
+        </p>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto mt-6">
+          Our platform integrates with major e-commerce platforms like Amazon, Shopify, ShipBob, AliExpress, and 4PX, 
+          helping businesses optimize their operations and reach a global audience.
         </p>
       </section>
 
+
       {/* Developer Info */}
       <section className="text-center">
-        <h2 className="text-2xl font-semibold mb-4">Lead Developer</h2>
-        <div className="flex flex-col items-center space-y-2">
-          <Image
-            src="https://raw.githubusercontent.com/Mark-Lasfar/MGZon/refs/heads/main/public/images/ibrahim_elasfar.png"
-            alt="Lead Developer"
-            width={150}
-            height={150}
-            className="rounded-full border-4 border-blue-600"
-          />
-          <h3 className="text-xl font-bold">Ibrahim Al-Aafar</h3>
-          <p className="text-gray-600">Full-stack Developer</p>
-          <p className="text-blue-600">markklasfar@gmail.com</p>
+        <h2 className="text-2xl font-semibold mb-6">Development Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+          {[
+            {
+              name: 'Ibrahim Al-Aafar',
+              role: 'Full-stack Developer',
+              email: 'ibrahim@company.com',
+              image: 'https://raw.githubusercontent.com/Mark-Lasfar/MGZon/refs/heads/main/public/images/ibrahim_elasfar.png',
+            },
+            {
+              name: 'Sarah James',
+              role: 'Frontend Developer',
+              email: 'sarah@company.com',
+              image: 'https://ui-avatars.com/api/?name=Sarah+James&background=random',
+            },
+            {
+              name: 'Michael Zane',
+              role: 'Backend Developer',
+              email: 'michael@company.com',
+              image: 'https://ui-avatars.com/api/?name=Michael+Zane&background=random',
+            },
+          ].map((dev, index) => (
+            <div key={index} className="flex flex-col items-center space-y-2">
+              <div className="relative w-[150px] h-[150px]">
+                <div className="absolute inset-0 rounded-full animate-spin bg-gradient-to-tr from-blue-500 via-pink-500 to-purple-500 p-[4px]" />
+                <div className="absolute inset-0 rounded-full bg-white z-10 m-[4px]" />
+                <Image
+                  src={dev.image}
+                  alt={dev.name}
+                  width={150}
+                  height={150}
+                  className="rounded-full z-20 relative object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-bold">{dev.name}</h3>
+              <p className="text-gray-600">{dev.role}</p>
+              <p className="text-blue-600">{dev.email}</p>
+            </div>
+          ))}
         </div>
       </section>
+
 
       {/* Partners */}
       <section>
@@ -59,21 +93,121 @@ export default function AboutPage() {
       <section>
         <h2 className="text-2xl font-semibold mb-6 text-center">Our Team</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <div key={index}>
-              <Image
-                src={`/images/staff${index + 1}.jpg`}
-                alt={`Staff ${index + 1}`}
-                width={100}
-                height={100}
-                className="rounded-full mx-auto"
-              />
-              <p className="mt-2 font-medium">Staff Member {index + 1}</p>
-              <p className="text-sm text-gray-600">staff{index + 1}@company.com</p>
-            </div>
-          ))}
+          {[...Array(8)].map((_, index) => {
+            const isManager = index === 0
+      
+            return (
+              <div key={index}>
+                <Image
+                  src={
+                    isManager
+                      ? 'https://raw.githubusercontent.com/Mark-Lasfar/Online-Shop/main/media/images/manager.jpg'
+                      : `https://ui-avatars.com/api/?name=Staff+${index + 1}&background=random`
+                  }
+                  alt={isManager ? 'Hagar Elshamy' : `Staff ${index + 1}`}
+                  width={100}
+                  height={100}
+                  className="rounded-full mx-auto"
+                />
+                <p className="mt-2 font-medium">
+                  {isManager ? 'Hagar Elshamy' : `Staff Member ${index + 1}`}
+                </p>
+                <p className="text-sm text-gray-600">
+                  {isManager ? 'Product Manager' : `staff${index + 1}@company.com`}
+                </p>
+              </div>
+            )
+          })}
         </div>
       </section>
+
+
+      {/* Platform Integrations Section */}
+    <section className="py-16 bg-gray-50">
+      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Our Integrations</h2>
+      <p className="text-lg text-center text-gray-600 mb-6 max-w-3xl mx-auto">
+        Our platform seamlessly integrates with some of the world's most popular e-commerce platforms, enabling businesses 
+        to manage their stores and expand their reach effortlessly. Explore our integrations with:
+      </p>
+    
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
+        {/* Amazon Integration */}
+        <div className="space-y-4">
+          <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+              alt="Amazon"
+              width={120}
+              height={40}
+              className="mx-auto"
+            />
+          </a>
+          <p className="text-lg text-gray-700 font-medium">Amazon</p>
+          <p className="text-sm text-gray-600">E-commerce platform for global selling</p>
+        </div>
+    
+        {/* Shopify Integration */}
+        <div className="space-y-4">
+          <a href="https://www.shopify.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/0/05/Shopify_logo_2022.svg"
+              alt="Shopify"
+              width={120}
+              height={40}
+              className="mx-auto"
+            />
+          </a>
+          <p className="text-lg text-gray-700 font-medium">Shopify</p>
+          <p className="text-sm text-gray-600">E-commerce platform for building online stores</p>
+        </div>
+    
+        {/* ShipBob Integration */}
+        <div className="space-y-4">
+          <a href="https://www.shipbob.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="https://www.shipbob.com/wp-content/uploads/2020/09/ShipBob_logo_full.png"
+              alt="ShipBob"
+              width={120}
+              height={40}
+              className="mx-auto"
+            />
+          </a>
+          <p className="text-lg text-gray-700 font-medium">ShipBob</p>
+          <p className="text-sm text-gray-600">Fulfillment and logistics management</p>
+        </div>
+    
+        {/* AliExpress Integration */}
+        <div className="space-y-4">
+          <a href="https://www.aliexpress.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/AliExpress_logo.svg"
+              alt="AliExpress"
+              width={120}
+              height={40}
+              className="mx-auto"
+            />
+          </a>
+          <p className="text-lg text-gray-700 font-medium">AliExpress</p>
+          <p className="text-sm text-gray-600">Global marketplace for e-commerce businesses</p>
+        </div>
+    
+        {/* 4PX Integration */}
+        <div className="space-y-4">
+          <a href="https://www.4px.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="https://www.4px.com/wp-content/uploads/2018/11/logo.png"
+              alt="4PX"
+              width={120}
+              height={40}
+              className="mx-auto"
+            />
+          </a>
+          <p className="text-lg text-gray-700 font-medium">4PX</p>
+          <p className="text-sm text-gray-600">Global shipping and logistics solution</p>
+        </div>
+      </div>
+    </section>
+
 
       {/* Contact Info */}
       <section className="text-center">
